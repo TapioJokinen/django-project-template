@@ -1,0 +1,12 @@
+[flake8]
+max-line-length = 119
+ignore =
+    # Whitespace before ':': Not PEP 8 compliant and clashes with Black.
+    E203,
+    # Line break before binary operator: Not PEP 8 compliant and clashes with Black.
+    W503
+exclude =
+    .venv,
+    .git,
+    __pycache__,
+    */migrations/*

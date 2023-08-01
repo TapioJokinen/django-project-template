@@ -1,0 +1,15 @@
+[run]
+branch = True
+
+omit =
+    */migrations/*
+    */manage.py
+    */config/*
+    */tests/*
+    */urls.py
+    */admin/*
+    */tasks.py
+    */__init__.py
+
+[report]
+fail_under = 100

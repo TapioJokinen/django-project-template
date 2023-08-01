@@ -1,0 +1,22 @@
+{
+    "editor.defaultFormatter": null,
+    "editor.formatOnSave": false,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "none",
+    "python.formatting.blackArgs": ["--line-length", "119"],
+    "[python]": {
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+      },
+      "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
+    "files.associations": {
+      ".coveragerc": ""
+    },
+    "isort.args":["--profile", "black"],
+  }

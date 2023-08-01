@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "myapp"
+version = "0.1.0"
+description = ""
+authors = ["Tapio Jokinen <tapio.jokinen@hotmail.com>"]
+license = "GPL v3"
+readme = "README.md"
+packages = [{include = "myapp"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "4.2.2"
+django-environ = "^0.10.0"
+djangorestframework = "^3.14.0"
+djangorestframework-simplejwt = "^5.2.2"
+pillow = "^9.5.0"
+python-magic = "^0.4.27"
+django-cors-headers = "^4.2.0"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+black = "^23.3.0"
+flake8 = "^6.0.0"
+debugpy = "^1.6.7"
+coverage = "^7.2.7"
+factory-boy = "^3.2.1"
+pre-commit = "^3.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[black]
+line-length = 119
+
+[tool.isort]
+profile = "black"

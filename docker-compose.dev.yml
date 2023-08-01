@@ -1,0 +1,27 @@
+services:
+  django:
+    build:
+      context: .
+      dockerfile: docker/dev.Dockerfile
+    volumes:
+      - .:/usr/myapp
+    ports:
+      - 8000:8000
+      - 8001:8001
+    restart: unless-stopped
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    depends_on:
+      - db
+
+  db:
+    image: postgres:latest
+    volumes:
+      - db:/var/lib/postgresql/data/
+    env_file:
+      - .env
+    ports:
+      - 6543:5432
+    restart: always
+
+volumes:
+  db:
