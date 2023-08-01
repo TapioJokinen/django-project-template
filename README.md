@@ -23,3 +23,13 @@
     ```bash
     ./.dev/run_dev.sh -B
     ```
+
+4. Run migrations:
+    ```bash
+    ./.dev/run_migrations.sh
+    ```
+
+## Having trouble?
+
+### Postgres healthcheck fails?
+>Make sure the EOL for files .env and postgres_healthcheck.sh is LF and not CRLF.
