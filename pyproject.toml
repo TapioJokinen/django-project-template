@@ -2,7 +2,7 @@
 name = "myapp"
 version = "0.1.0"
 description = ""
-authors = ["Tapio Jokinen <tapio.jokinen@hotmail.com>"]
+authors = ["My Name <my.email@example.com>"]
 license = "GPL v3"
 readme = "README.md"
 packages = [{include = "myapp"}]
